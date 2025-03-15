@@ -3,10 +3,10 @@ package classes;
 public class Game {
     //Atributos:
     private Player jogador;
-    private Lugar local;
+    private Area local;
 
     //Métodos especiais:
-    public Game(Player jogador, Lugar lugar){
+    public Game(Player jogador, Area lugar){
         this.jogador = jogador;
         this.local = lugar;
     }
@@ -17,10 +17,10 @@ public class Game {
         this.jogador = jogador;
     }
 
-    public Lugar getLocal() {
+    public Area getLocal() {
         return local;
     }
-    public void setLocal(Lugar local) {
+    public void setLocal(Area local) {
         this.local = local;
     }
 

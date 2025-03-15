@@ -12,9 +12,14 @@ public class Main {
     public static void main(String[] args) {
         Menus menu = new Menus();
         boolean rodar = true;
-        Lugar meiDoMato = new Area("Meio do mato", "Um lugar com muito mato");
-        Lugar baixaDaEgua = new Area("Baixa da egua", "Um local baixo e com uma\n egua comendo capim");
+        Area meiDoMato = new Area("Meio do mato", "Um lugar com muito mato");
+        Area baixaDaEgua = new Area("Baixa da egua", "Um local baixo e com uma\n egua comendo capim");
         meiDoMato.setLeste(baixaDaEgua);
+        baixaDaEgua.setOeste(meiDoMato);
+        Fazenda fazendaInicial = new Fazenda("Fazenda pouca mutuca");
+        AnimalLocal galinheiro = new AnimalLocal("Galinheiro1", "Galinheiro");
+        fazendaInicial.adicionarLocalAnimais(galinheiro);
+        baixaDaEgua.adicionarContrucao(fazendaInicial);
         while(true){
             limparTela();
             int opc = menu.menuInicial();

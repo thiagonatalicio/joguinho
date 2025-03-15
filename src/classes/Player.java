@@ -7,6 +7,7 @@ public class Player {
     private float dinheiro;
     //Métodos especiais:
 
+
     public Player(String nome) {
         setNome(nome);
         setDinheiro(10f);
