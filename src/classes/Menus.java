@@ -31,6 +31,7 @@ public class Menus {
     public int menuJogo(Game game){
         System.out.println("+---------------------------+");
         System.out.println("Voce está em: " + game.getLocal().getNome());
+        game.descreverLocal();
         System.out.println("        1 - Se mover.");
         System.out.println("          2 - Sair. ");
         Scanner scanner = new Scanner(System.in);

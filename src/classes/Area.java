@@ -9,7 +9,7 @@ public class Area{
     private Area sul;
     private Area leste;
     private Area oeste;
-    public Construcao[] construcao = new Construcao[10];
+    public Fazenda[] propridades = new Fazenda[10];
 
     public Area(String nome, String descricao){
         setNome(nome);
@@ -57,13 +57,21 @@ public class Area{
         this.oeste = oeste;
     }
 
-    public void adicionarContrucao(Construcao construcao){
+    public void listaPropriedades(){
         int i = 0;
-        while(this.construcao[i] != null && i < 10){
+        while(propridades[i] != null){
+            System.out.println("-" + propridades[i].getNome());
+            i ++;
+        }
+    }
+
+    public void adicionarContrucao(Fazenda propridades){
+        int i = 0;
+        while(this.propridades[i] != null && i < 10){
             i ++;
         }
         if (i < 11){
-            this.construcao[i] = construcao;
+            this.propridades[i] = propridades;
         }
     }
 

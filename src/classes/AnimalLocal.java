@@ -25,6 +25,14 @@ public class AnimalLocal {
         this.animais[9] = null;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public Animal[] getAnimais() {
         return animais;
     }

@@ -25,8 +25,10 @@ public class Game {
     }
 
     //Métodos:
-    public String descreverLocal(){
-        return getLocal().getDescricao();
+    public void descreverLocal(){
+        System.out.println("Propriedades:");
+        local.listaPropriedades();
+        getLocal().getDescricao();
     }
 
     public void mudarLocal(int num){

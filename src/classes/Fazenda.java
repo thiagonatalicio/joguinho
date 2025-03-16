@@ -18,6 +18,15 @@ public class Fazenda extends Construcao{
         this.casaAnimais = casaAnimais;
     }
     //Métodos:
+    public String listaConstrucoes(){
+        String lista = casaAnimais[0].getNome();
+
+        for (int i = 0; i < 8; i ++){
+            lista = (lista + ("\n " + casaAnimais[i].getNome()));
+        }
+        return lista;
+    }
+
     public void adicionarLocalAnimais(AnimalLocal animalLocal){
         int i = 0;
         while(this.casaAnimais[i] != null && i < 8){

@@ -1,6 +1,6 @@
 package classes;
 
-public class Construcao {
+public abstract class Construcao {
     protected String nome;
 
     public Construcao(String nome) {
@@ -14,4 +14,5 @@ public class Construcao {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
 }
